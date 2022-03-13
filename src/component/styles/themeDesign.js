@@ -66,26 +66,45 @@ const useStyles = makeStyles((theme) => ({
     },
     //Home Card Design.
     homeCardRoot: {
-        background: '#f8cc6a',
+        background: '#cbf27e',
         marginBottom: 10,
-        marginRight: 10   
+        marginRight: 10
     },
     hoameCardTitle: {
         fontSize: 24,
     },
-    homeCardBody:{
+    homeCardBody: {
         minHeight: 200,
         maxHeight: 200,
         overflowY: 'ellipsis',
-        paddingBottom:5
+        paddingBottom: 5
     },
     homeCardPos: {
         marginBottom: 12,
     },
-    homeAddPostBtn:{
+    homeAddPostBtn: {
         marginBottom: 15,
         float: 'right',
 
+    },
+
+    ///This is classes for instutaion card.
+    univerCardRoot: {
+        background: '#fff36b',
+        marginBottom: 10,
+        marginRight: 10
+    },
+    univerCardLocation: {
+        fontSize: 14,
+    }, 
+    univerCardBody: {
+        fontSize: 18,
+        minHeight: 100,
+        maxHeight: 100,
+        overflowY: 'ellipsis',
+    },
+    univerDomainli: {
+        fontSize: 16,
     }
 
 }));

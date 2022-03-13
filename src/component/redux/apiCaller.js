@@ -1,9 +1,17 @@
 import Axios from "axios";
-import { BASE_URL } from "./type";
+import { BASE_URL, COUNTRY_URL, UNIVERSITY_URL } from "./type";
 
 export const axiosInst = Axios.create({
     baseURL: BASE_URL,
     headers: {
         'Accept': 'application/json'
     }
+});
+
+export const axioCountries = Axios.create({
+    baseURL: COUNTRY_URL
+});
+
+export const axioUniversity = Axios.create({
+    baseURL: UNIVERSITY_URL
 });
