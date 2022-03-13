@@ -62,10 +62,31 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3)
+        padding: theme.spacing(2)
     },
-    
-    
+    //Home Card Design.
+    homeCardRoot: {
+        background: '#f8cc6a',
+        marginBottom: 10,
+        marginRight: 10   
+    },
+    hoameCardTitle: {
+        fontSize: 24,
+    },
+    homeCardBody:{
+        minHeight: 200,
+        maxHeight: 200,
+        overflowY: 'ellipsis',
+        paddingBottom:5
+    },
+    homeCardPos: {
+        marginBottom: 12,
+    },
+    homeAddPostBtn:{
+        marginBottom: 15,
+        float: 'right',
+
+    }
 
 }));
 

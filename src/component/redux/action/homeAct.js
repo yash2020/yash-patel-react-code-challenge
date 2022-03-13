@@ -8,7 +8,6 @@ export const fetchHomeData = () => async dispatch => {
     dispatch({type: GET_HOMEDATA_DISPATCH});
 
     await axiosInst.get('? _start=0&amp;_limit=20',{}).then((response)=>{
-        console.log(response);
         dispatch({
             type: GET_HOMEDATA_SUCCESS,
             payload: response.data,
