@@ -6,11 +6,17 @@ import HomePage from './pages/Home';
 import UniversitiesPage from './pages/Universities';
 import PostalLookupPage from './pages/PostalLookup';
 import Layout from './component/Layout';
-
+// Redux Files...
+import { Provider } from 'react-redux';
+import store from './component/redux/configureStore';
 
 function App() {
+
   
+
+
   return (
+    <Provider store={store}>
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -18,6 +24,7 @@ function App() {
           <Route path="/postal-lookup" element={<PostalLookupPage />} />
         </Routes>
       </Layout>
+    </Provider>
   );
 
 }
