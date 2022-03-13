@@ -6,9 +6,9 @@ import { GET_UNIVERSITIES_CITIES, GET_UNIVERSITIES_DATA_DISPATCH, GET_UNIVERSITI
 export const fetchUniversitiesData = (selectedCountry) => async dispatch => {
     // This is to Call Axio api
     dispatch({ type: GET_UNIVERSITIES_DATA_DISPATCH });
-    var defaultCountry = 'Canada';
+    // var defaultCountry = 'Canada';
 
-    await axioUniversity.get(`search?country=${!selectedCountry ? defaultCountry : selectedCountry}`, {}).then((response) => {
+    await axioUniversity.get(`search?country=${selectedCountry}`, {}).then((response) => {
         dispatch({
             type: GET_UNIVERSITIES_DATA_SUCCESS,
             payload: response.data,
@@ -24,6 +24,7 @@ export const fetchUniversitiesData = (selectedCountry) => async dispatch => {
 export const fetchCountryNames = () => async dispatch => {
     console.log('fetching County Name');
     await axioCountries.get().then((response) => {
+        console.log(response);
         dispatch({
             type: GET_UNIVERSITIES_CITIES,
             payload: response.data,

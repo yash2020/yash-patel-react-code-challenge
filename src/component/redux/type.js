@@ -15,4 +15,4 @@ export const GET_UNIVERSITIES_CITIES_FAIL = 'GET_UNIVERSITIES_CITIES_FAIL';
 
 export const BASE_URL = 'https://jsonplaceholder.typicode.com/posts';
 export const UNIVERSITY_URL = 'http://universities.hipolabs.com/';
-export const COUNTRY_URL = "https://restcountries.eu/";
+export const COUNTRY_URL = "https://restcountries.com/v3.1/all";

@@ -89,6 +89,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     ///This is classes for instutaion card.
+    citySelect:{
+        maxWidth: 200,
+        marginBottom:5
+    },
     univerCardRoot: {
         background: '#fff36b',
         marginBottom: 10,
