@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     },
     //Home Card Design.
     homeCardRoot: {
-
+        background: '#cbf27e',
         marginBottom: 10,
         marginRight: 10
     },
@@ -100,7 +100,6 @@ const useStyles = makeStyles((theme) => ({
             width: '60ch',
         },
     },
-
     ///for Modal
     modal: {
         justifyContent: 'center',
@@ -133,6 +132,29 @@ const useStyles = makeStyles((theme) => ({
     },
     postCardBody:{
         marginTop: 10
+    },
+
+    ///This is classes for instutaion card.
+    citySelect:{
+        maxWidth: 200,
+        marginBottom:5
+    },
+    univerCardRoot: {
+        background: '#fff36b',
+        marginBottom: 10,
+        marginRight: 10
+    },
+    univerCardLocation: {
+        fontSize: 14,
+    }, 
+    univerCardBody: {
+        fontSize: 18,
+        minHeight: 100,
+        maxHeight: 100,
+        overflowY: 'ellipsis',
+    },
+    univerDomainli: {
+        fontSize: 16,
     }
 
 }));
