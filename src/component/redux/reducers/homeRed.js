@@ -1,10 +1,11 @@
-import { GET_HOMEDATA_DISPATCH, GET_HOMEDATA_SUCCESS, GET_HOMEDATA_FAIL, DELETE_HOMEDATA_SUCCESS, DELETE_HOMEDATA_FAIL } from "../type"
+import {GET_HOMEDATA_ID_SUCCESS, GET_HOMEDATA_DISPATCH, GET_HOMEDATA_SUCCESS, GET_HOMEDATA_FAIL, DELETE_HOMEDATA_SUCCESS, DELETE_HOMEDATA_FAIL } from "../type"
 
 const intialState = {
     loading: false,
     data: [],
     error: '',
-    operations: []
+    operations: [],
+    dataID: []
 };
 
 const homeDataReducer = (state = intialState, action) => {
@@ -21,6 +22,13 @@ const homeDataReducer = (state = intialState, action) => {
             return {
                 ...state,
                 data: payload,
+                error: '',
+                loading: false
+            }
+        case GET_HOMEDATA_ID_SUCCESS:
+            return {
+                ...state,
+                dataID: payload,
                 error: '',
                 loading: false
             }

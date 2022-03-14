@@ -66,27 +66,51 @@ const useStyles = makeStyles((theme) => ({
     },
     //Home Card Design.
     homeCardRoot: {
-        
+
         marginBottom: 10,
-        marginRight: 10   
+        marginRight: 10
     },
     hoameCardTitle: {
         fontSize: 24,
     },
-    homeCardBody:{
+    homeCardBody: {
         minHeight: 200,
         maxHeight: 200,
         overflowY: 'ellipsis',
-        paddingBottom:5
+        paddingBottom: 5
     },
     homeCardPos: {
         marginBottom: 12,
     },
-    homeAddPostBtn:{
+    homeAddPostBtn: {
         marginBottom: 15,
         float: 'right',
 
-    }
+    },
+    formRoot: {
+        '& .MuiTextField-root': {
+            margin: theme.spacing(1),
+            width: '60ch',
+        },
+    },
+
+    ///for Modal
+    modal: {
+        justifyContent: 'center',
+        position: 'fixed',
+        display: 'flex',
+        alignItems: 'center',
+    },
+    paper: {
+        backgroundColor: theme.palette.background.paper,
+        border: '1px solid #7F7F7F',
+        padding: '20px',
+        borderRadius: '15px',
+        maxWidth: '60vw',
+        maxHeight: '70vh',
+        boxShadow: '0 3px 15px - 3px rgba(0, 0, 0, 0.2)',
+
+    },
 
 }));
 
