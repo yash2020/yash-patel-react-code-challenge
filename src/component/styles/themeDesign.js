@@ -89,7 +89,9 @@ const useStyles = makeStyles((theme) => ({
         float: 'right',
     },
     postSearchDiv: {
-
+        maxWidth: '50vw',
+        margin: '0 auto',
+        marginBottom: 10,
     },
     formRoot: {
         '& .MuiTextField-root': {
@@ -114,10 +116,6 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '70vh',
         boxShadow: '0 3px 15px - 3px rgba(0, 0, 0, 0.2)',
 
-    },
-        maxWidth: '50vw',
-        margin: '0 auto',
-        marginBottom: 10,
     },
     searchBtn: {
         height: '100%',
