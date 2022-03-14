@@ -68,24 +68,48 @@ const useStyles = makeStyles((theme) => ({
     homeCardRoot: {
         background: '#f8cc6a',
         marginBottom: 10,
-        marginRight: 10   
+        marginRight: 10
     },
     hoameCardTitle: {
         fontSize: 24,
+        width: '100%',
+        
     },
-    homeCardBody:{
+    homeCardBody: {
         minHeight: 200,
         maxHeight: 200,
         overflowY: 'ellipsis',
-        paddingBottom:5
+        paddingBottom: 5
     },
     homeCardPos: {
         marginBottom: 12,
     },
-    homeAddPostBtn:{
+    homeAddPostBtn: {
         marginBottom: 15,
         float: 'right',
+    },
+    postSearchDiv: {
 
+        maxWidth: '50vw',
+        margin: '0 auto',
+        marginBottom: 10,
+    },
+    searchBtn: {
+        height: '100%',
+        fontSize: 24,
+    },
+    postCard: {
+        maxWidth: '70vw',
+        float: 'center',
+        margin: '0 auto',
+        overflowY: 'ellipsis',
+        marginTop: 15,
+    },
+    postCardCntry:{
+        float:'right'
+    },
+    postCardBody:{
+        marginTop: 10
     }
 
 }));
