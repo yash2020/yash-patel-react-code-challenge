@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 15,
         float: 'right',
     },
+   
     postSearchDiv: {
         maxWidth: '50vw',
         margin: '0 auto',
@@ -115,7 +116,6 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: '60vw',
         maxHeight: '70vh',
         boxShadow: '0 3px 15px - 3px rgba(0, 0, 0, 0.2)',
-
     },
     searchBtn: {
         height: '100%',
