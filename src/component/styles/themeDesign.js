@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     },
     //Home Card Design.
     homeCardRoot: {
-        background: '#f8cc6a',
+        
         marginBottom: 10,
         marginRight: 10   
     },

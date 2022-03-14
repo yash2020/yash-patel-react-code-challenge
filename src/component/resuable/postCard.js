@@ -1,10 +1,13 @@
 
 import * as React from 'react';
-import { Card, CardContent, Typography, CardActions, Divider } from '@material-ui/core';
+import { Card, CardContent, Typography, CardActions, Divider, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import useStyles from '../styles/themeDesign';
+import { useDispatch } from 'react-redux';
+import { deletePost } from '../redux/action/homeAct';
 
 export default function EachPost(props) {
+    const dispatch = useDispatch();
     const classes = useStyles();
     return (
         <Card className={classes.homeCardRoot} variant="outlined" >
@@ -23,7 +26,8 @@ export default function EachPost(props) {
                 </Typography>
             </CardContent>
             <CardActions>
-                {/* Add ----> edit Card and delete card */}
+            <Button variant='contained' color="secondary" onClick={()=>dispatch(deletePost(props.postId))}>Delete</Button>
+
             </CardActions>
         </Card>
     );
