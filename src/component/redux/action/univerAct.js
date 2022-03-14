@@ -1,5 +1,5 @@
 
-import { axioCountries, axiosInst, axioUniversity } from "../apiCaller";
+import { axioCountries, axioUniversity } from "../apiCaller";
 import { GET_UNIVERSITIES_CITIES, GET_UNIVERSITIES_DATA_DISPATCH, GET_UNIVERSITIES_DATA_FAIL, GET_UNIVERSITIES_DATA_SUCCESS, GET_UNIVERSITIES_CITIES_FAIL } from "../type"
 
 
